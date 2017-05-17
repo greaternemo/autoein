@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+    <link rel="stylesheet" type="text/css" href="ein.css">
+    
+    <head>
+        
+        
+        
+    </head>
+    
+    <body onload="EIN.init()">
+        
+        <div id="game_box">
+            
+            <div id="preopt_panel">
+                <br>
+                <button id="2p_start" class='in_panel' onclick="SIG('prepPlayers', 2)">
+                    2 Player Game
+                </button>
+                <br>
+                <br>
+                <button id="3p_start" class='in_panel' onclick="SIG('prepPlayers', 3)">
+                    3 Player Game
+                </button>
+                <br>
+                <br>
+                <button id="4p_start" class='in_panel' onclick="SIG('prepPlayers', 4)">
+                    4 Player Game
+                </button>
+                <br>
+                <br>
+                <button id="5p_start" class='in_panel' onclick="SIG('prepPlayers', 5)">
+                    5 Player Game
+                </button>
+                <br>
+            </div>
+            <div id="opt_panel" class="hidden">
+                <br>
+                <button id="ctrl_loop" class='in_panel' onclick="SIG('toggleLoop')">
+                    Start Game
+                </button>
+                <br>
+                <br>
+                <button id="loop_speed" class='in_panel' onclick="SIG('toggleLoopSpeed')">
+                    Speed Up
+                </button>
+                <br>
+                <br>
+                <code id="ein_stats" class='in_panel'></code>
+                <br>
+                <br>
+                <code id="p1_stats" class='in_panel'></code>
+                <br>
+                <br>
+                <code id="p2_stats" class='in_panel'></code>
+                <br>
+                <br>
+                <code id="p3_stats" class='in_panel'></code>
+                <br>
+                <br>
+                <code id="p4_stats" class='in_panel'></code>
+                <br>
+                <br>
+                <code id="p5_stats" class='in_panel'></code>
+                <!--
+                <br>
+                <br>
+                <input id="box_short" type="checkbox">
+                    Shorter Lines
+                </input>
+                -->
+                
+            </div>
+            
+            <div id="msg_panel">
+                <!--
+                <code id="msg_feed">Welcome to EIN</code>
+                -->
+            </div>
+        
+        </div>
+        
+    </body>
+    
+    <script src="EIN.js"></script>
+    <script src="EIN/Player.js"></script>
+    <script src="EIN/Arena.js"></script>
+    <script src="EIN/BASE.js"></script>
+    <script src="EIN/Game.js"></script>
+    <script src="EIN/Narrator.js"></script>
+    <script src="EIN/Registry.js"></script>
+    <script src="EIN/Router.js"></script>
+    <script src="EIN/Util.js"></script>
+    
+</html>
